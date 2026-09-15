@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #F7FAF9;
+  color: #0F2A2E;
+}
+
+/* Large, thumb-friendly tap targets everywhere — the driver screen especially
+   must work one-handed on a basic Android phone. */
+.btn-primary {
+  @apply w-full rounded-xl bg-teal-600 text-white text-lg font-semibold py-4 active:bg-teal-700 transition-colors;
+}
+.btn-secondary {
+  @apply w-full rounded-xl border-2 border-teal-600 text-teal-700 text-lg font-semibold py-4 active:bg-teal-50 transition-colors;
+}
+.card {
+  @apply bg-white rounded-xl border border-teal-100 shadow-sm p-4;
+}
+.input {
+  @apply w-full rounded-xl border border-teal-100 px-4 py-3 text-lg outline-none focus:border-teal-500;
+}
